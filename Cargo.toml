@@ -1,0 +1,13 @@
+[package]
+name = "clinews"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15.0"
+newsapi = { path = "./newsapi", features = ["async"] }
+termimad = "0.29.4"
+tokio = { version = "1.38.0", features = ["full"] }
+crossterm = "0.27.0"
